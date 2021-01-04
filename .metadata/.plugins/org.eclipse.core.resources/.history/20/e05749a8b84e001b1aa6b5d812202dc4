@@ -14,10 +14,8 @@ class Person{
 		System.out.println("Person can speak");
 	}
 	
-	int calculateAge() {
+	void calculateAge() {
 		int yearLeft=65-age;
-		System.out.println(yearLeft);
-		return yearLeft;
 	}
 }
 
@@ -28,7 +26,7 @@ public class ObjectDemo {
 		
 		Person p1=new Person();
 		p1.name= "Aditya";
-		p1.age=20;
+		p1.age=67;
 		
 		Person p2 = new Person();
 		p2.name="Shende";
@@ -40,8 +38,7 @@ public class ObjectDemo {
 		System.out.println(p2.age);
 		p1.speak();
 		p2.speak();
-		int year=p1.calculateAge();
-		System.out.println(year);
+		p1.calculateAge();
 	}
 
 }

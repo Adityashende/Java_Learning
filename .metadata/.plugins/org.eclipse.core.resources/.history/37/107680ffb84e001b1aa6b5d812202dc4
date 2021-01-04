@@ -40,8 +40,7 @@ public class ObjectDemo {
 		System.out.println(p2.age);
 		p1.speak();
 		p2.speak();
-		int year=p1.calculateAge();
-		System.out.println(year);
+		p1.calculateAge();
 	}
 
 }
