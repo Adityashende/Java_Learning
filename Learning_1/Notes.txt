@@ -1,0 +1,64 @@
+OOP's in Java
+
+Object simply means a real-world entity such as fan,chair,laptop etc.
+So what is onject oriented programming or paradigm means ??
+
+==> It simple word we can say that a method to design a program using classes and objects.It helps the programmer to simplify the deveolopment and maintainance by providing certain concepts such as:
+
+* Objects
+* class
+* Inheritance
+* Polymorphism
+* Abstraction
+* Encapsulation
+
+With the help of the above concept we can implement our object-oriented programming in our development of any application/software.
+
+Apart form these there are few more concept which we can used to implement object-oriented design. We will discuss this topic further in this leraning.
+
+Let's start with basics:
+
+* Objects : A object is something which has state and behaviour.It has data and its behaviour i.e methods.
+
+For Example: Object:House is an object and that house has Address,color which is known as "state" and "behaviour" for house is opening door,closing the door etc.
+
+Lets understand with the code :
+
+State can be represented as instance variable and behaviour as methods
+
+class House {
+
+	String address;
+	String color;
+
+	void openDoor(){
+	
+	//Implementation goes here;
+
+ }
+	void closeDoor(){
+
+	//Implementation goes here;
+ }
+}
+
+So in the above example openDoor and closeDoor are methods and address,color are instance variable.
+
+What is instance variable ?
+
+==> The variable which are declared inside the class but outside the constructor,block,methods.
+Instance variable are created when an object is instantiated and are accessible to all constructor,methods, blocks in the class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
