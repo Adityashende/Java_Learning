@@ -1,0 +1,169 @@
+OOP's in Java
+
+Object simply means a real-world entity such as fan,chair,laptop etc.
+So what is onject oriented programming or paradigm means ??
+
+==> It simple word we can say that a method to design a program using classes and objects.It helps the programmer to simplify the deveolopment and maintainance by providing certain concepts such as:
+
+* Objects
+* class
+* Inheritance
+* Polymorphism
+* Abstraction
+* Encapsulation
+
+With the help of the above concept we can implement our object-oriented programming in our development of any application/software.
+
+Apart form these there are few more concept which we can used to implement object-oriented design. We will discuss this topic further in this leraning.
+
+Let's start with basics:
+
+**> Objects : A object is something which has state and behaviour.It has data and its behaviour i.e methods.
+
+For Example: Object:House is an object and that house has Address,color which is known as "state" and "behaviour" for house is opening door,closing the door etc.
+
+Lets understand with the code :
+
+State can be represented as instance variable and behaviour as methods
+
+class House {
+
+	String address;
+	String color;
+
+	void openDoor(){
+	
+	//Implementation goes here;
+
+ }
+	void closeDoor(){
+
+	//Implementation goes here;
+ }
+}
+
+So in the above example openDoor and closeDoor are methods and address,color are instance variable.
+
+What is instance variable ?
+
+==> The variable which are declared inside the class but outside the constructor,block,methods.
+Instance variable are created when an object is instantiated and are accessible to all constructor,methods, blocks in the class.
+
+==> There are three ways to initialize java :
+
+1.By Reference variable
+2.By Methods
+3.By Constructor
+
+Imp***:The new keyword is used to allocate memory at runtime. All objects get memory in Heap memory area.
+
+**> Class : We can say that a class is a blueprint from which objects are created.
+	It is a logical entity.
+	It is a group of objects with common properties.
+
+A class in java can contain :
+
+=> Fields
+=> Methods
+=> Constructors
+=> Blocks
+=> Nested class and interface
+
+
+Synatx : class 'className'{
+
+		fields;
+		Methods;
+	}
+**> Methods in java:
+
+==> Methods in java is like function which is used to defined the behaviour of an object.
+	
+**> "this" keyword in java :
+
+==> 'this' is a reference variable used to refer the current object.
+
+"this keyword" is used for differnt purpose in java:
+
+--> it can be used to refer current class instance variable.
+--> it can be used to invoke current class method implicitily.
+--> this() can be used to invoke current class constructor.
+--> it can also be passed as an argument in method call.
+--> it can also be passed as an argument in constructor call
+--> this can be used to retrun current class instance from the method.
+
+"Formal parameters in java are the parameters which are given in the definition of the methods."
+ 
+For Example: Let us assume that a function B() is called from another function A(). In this case A is called the “caller function” and B is called the “called function or callee function”. Also, the arguments which A sends to B are called actual arguments and the parameters of B are called formal arguments.
+
+In short,this keyword is used to differentiate b/w local variable and instance variable
+
+**> Constructors: 
+
+==> It is the special type of method to initailize the object.
+    Every time an object is created using the new() keyword, at least one constructor is called.
+    It calls a dfault constructor if there is no constructor available in the class.If no constructor is defined then java compiler provides default contructor.
+It is called constructor because it constructs the values at the time of object creation
+
+There are two types of constructors in Java: no-arg constructor, and parameterized constructor.
+
+Rules for constructor:
+
+1. Constructor name must be the same as its class name
+2. A Constructor must have no explicit return type
+3. A Java constructor cannot be abstract, static, final, and synchronized
+
+**> Static Methods(and Final)
+
+==> Static variable in java is generally used for memoy management.
+
+The static can be :
+
+1. Variable
+2. Method
+3. Block
+4. Nested class
+
+1. static variable 
+==> The static variable can be used to refer to the common property of all the onjects
+    The static variable gets memory only once while class loading
+    It makes your program memory efficient.
+
+2. static methods
+
+If you apply static keyword with any method, it is known as static method.
+
+-> staic method belongs to the class rather than the object of a class.
+-> It can be invoked without the need for creating an instance of a class.
+-> It can access static data member and can change the value of it.
+
+
+**> Can we execute a program without main() method?
+--> No, one of the ways was the static block, 
+but it was possible till JDK 1.6. Since JDK 1.7, 
+it is not possible to execute a Java 
+class without the main method.
+
+**> String Buffer and String Builder
+
+==> Java StringBuffer class is used to create modifiable string.It is totally same as string class except it is mutable.
+
+Constructor of StringBuffer class:
+
+1. StringBuffer(): creates an empty buffer with the initial capacity of 16.
+2. StringBuffer(String str): creates a string buffer with the specified string.
+3. StringBuffer(int capacity): creates an empty string buffer with the specified capacity as length.
+
+Also there is "append" method which is provided by StringBuffer class.The method is used to append specified string with this string.The append() method is overloaded like append(char),append(boolean)etc.
+
+
+**> toString method :
+
+==> It is used to represent object into string.It returns the string representation of the object.
+
+
+
+
+
+
+
