@@ -161,8 +161,19 @@ Also there is "append" method which is provided by StringBuffer class.The method
 
 ==> It is used to represent object into string.It returns the string representation of the object.
 
+OOP's Concept in java:
 
+1. Inheritance:
 
+let a = 1;
+let b= 5;
+let c=0;
+
+if((c=(a+c))==a){
+return a;
+}else{
+return b;
+}
 
 
 
